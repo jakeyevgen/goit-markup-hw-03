@@ -18,6 +18,34 @@
     --team-back-color: #F4F4FD;
     --team-advan-title-color: #2E2F42;
     --team-advan-descr-color: #434455;
+    --team-carg-bg-color: #FFFFFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 1px solid red; */
 }
 
 .list {
@@ -35,6 +63,31 @@ body {
 }
 
 /* ===== Header for index and portfolio section ============= */
+
+.header {
+    padding: 24px;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.address-flex {
+    display: flex;
+}
+
+
 .logo-studio,
 .logo-web,
 .logo-web-footer {
@@ -55,10 +108,12 @@ body {
 
 .logo-web {
     color: var(--logo-web-color);
+    margin-right: 76px;
 }
 
 .logo-web-footer {
     color: var(--logo-web-footer-color);
+    margin-bottom: 16px;
 }
 
 .menu-link {
@@ -91,12 +146,27 @@ body {
     color: var(--accent-color);
 }
 
+.header-address {
+    margin-left: auto;
+}
+
+.header-email {
+    margin-right: 40px;
+}
+
 
 /* ============= /Header section ============= */
 
 /* ============= Hero section ============= */
 .hero {
     background: var(--hero-color);
+    padding: 188px 100px 188px;
+}
+
+
+.btn-center {
+    display: block;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -105,9 +175,13 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--hero-title-color);
+    margin-bottom: 40px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
-.modal-btn {
+
+.modal-btn-font {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -116,6 +190,7 @@ body {
     letter-spacing: 0.04em;
     color: var(--modal-btn-color);
 }
+
 
 .modal-btn {
     display: flex;
@@ -126,6 +201,7 @@ body {
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: 1px solid #4D5AE5;
 }
 
 .modal-btn:hover,
@@ -146,6 +222,10 @@ button {
     display: none
 }
 
+.advantages {
+    margin: 120px 156px;
+}
+
 .advantages-titles {
     font-weight: 500;
     font-size: 20px;
@@ -162,6 +242,11 @@ button {
     color: var(--team-advan-descr-color);
 }
 
+.advant-exp {
+    display: flex;
+    gap: 24px;
+}
+
 /* ============= /Advantage section ============= */
 
 /* ============= Doing section ============= */
@@ -173,12 +258,37 @@ button {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--doing-team-font-color);
+    margin-bottom: 72px;
+}
+
+.doing-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+    gap: 24px;
+}
+
+.doing-list {
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 /* ============= Team section ============= */
 
 .team {
     background: var(--team-back-color);
+    padding: 120px 100px;
+    margin-bottom: 8px;
+}
+
+.team-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+}
+
+.team-list {
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .team-main-title {
@@ -189,6 +299,7 @@ button {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--doing-team-font-color);
+    margin-bottom: 72px;
 }
 
 .team-title {
@@ -197,6 +308,8 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--team-advan-title-color);
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .team-title-descr {
@@ -205,6 +318,14 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--team-advan-descr-color);
+    text-align: center;
+}
+
+.team-content {
+    padding: 32px;
+    background-color: var(--team-carg-bg-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* ============= /Team section ============= */
@@ -218,10 +339,15 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-font-color);
+    padding-right: 850px;
 }
 
 .footer-color {
     background: var(--footer-color);
+}
+
+.footer {
+    padding: 100px 100px;
 }
 
 /* ============= /Footer ============= */
@@ -235,15 +361,26 @@ button {
     display: none;
 }
 
+.filter-btn {
+    padding: 96px 100px 72px;
+}
+
+.filter-flex {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+
 .portfolio-btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 12px 24px;
-    width: 116px;
-    height: 48px;
     background: var(--btn-bg-color);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
 }
 
 .portfolio-btn-font {
@@ -273,6 +410,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--team-advan-title-color);
+    text-align: left;
 }
 
 .explanation {
@@ -281,4 +419,28 @@ button {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--team-advan-descr-color);
+    text-align: left;
+}
+
+.card-border {
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
+}
+
+.portfolio-flex {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.portfolio-list {
+    flex-basis: calc((100% - 44px) / 3);
+}
+
+.card-content {
+    padding: 32px;
+}
+
+.portfolio-padding {
+    padding-bottom: 120px;
 }
