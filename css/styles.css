@@ -1,0 +1,284 @@
+:root {
+    --accent-color: #404BBF;
+    --btn-bg-color: #F4F4FD;
+    --btn-font-color: #4D5AE5;
+    --btn-accent-bg-color: #404BBF;
+    --btn-accent-font-color: #FFFFFF;
+    --logo-studio-color: #4D5AE5;
+    --logo-web-color: #2E2F42;
+    --logo-web-footer-color: #F4F4FD;
+    --menu-link-color: #2E2F42;
+    --header-links-color: #434455;
+    --hero-title-color: #FFFFFF;
+    --hero-color: #2E2F42;
+    --modal-btn-color: #FFFFFF;
+    --footer-color: #2E2F42;
+    --footer-font-color: #E7E9FC;
+    --doing-team-font-color: #2E2F42;
+    --team-back-color: #F4F4FD;
+    --team-advan-title-color: #2E2F42;
+    --team-advan-descr-color: #434455;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
+    color: #2E2F42;
+}
+
+/* ===== Header for index and portfolio section ============= */
+.logo-studio,
+.logo-web,
+.logo-web-footer {
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.logo-studio {
+    color: var(--logo-studio-color);
+}
+
+.logo-web {
+    color: var(--logo-web-color);
+}
+
+.logo-web-footer {
+    color: var(--logo-web-footer-color);
+}
+
+.menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--menu-link-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+}
+
+.header-email,
+.header-tel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--header-links-color);
+}
+
+.header-email:hover,
+.header-email:focus,
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--accent-color);
+}
+
+
+/* ============= /Header section ============= */
+
+/* ============= Hero section ============= */
+.hero {
+    background: var(--hero-color);
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--hero-title-color);
+}
+
+.modal-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--modal-btn-color);
+}
+
+.modal-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background: var(--accent-color);
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* ============= /Hero section ============= */
+
+
+/* ============= Advantage section ============= */
+.advantages-main-title {
+    display: none
+}
+
+.advantages-titles {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--team-advan-title-color);
+}
+
+.advantages-title-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--team-advan-descr-color);
+}
+
+/* ============= /Advantage section ============= */
+
+/* ============= Doing section ============= */
+.doing-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--doing-team-font-color);
+}
+
+/* ============= Team section ============= */
+
+.team {
+    background: var(--team-back-color);
+}
+
+.team-main-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--doing-team-font-color);
+}
+
+.team-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--team-advan-title-color);
+}
+
+.team-title-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--team-advan-descr-color);
+}
+
+/* ============= /Team section ============= */
+
+/* ============= Footer ============= */
+
+.footer-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--footer-font-color);
+}
+
+.footer-color {
+    background: var(--footer-color);
+}
+
+/* ============= /Footer ============= */
+
+
+/* ==============  PORTFOLIO ======== */
+
+/* ============= Filter section ============= */
+
+.filter {
+    display: none;
+}
+
+.portfolio-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 116px;
+    height: 48px;
+    background: var(--btn-bg-color);
+}
+
+.portfolio-btn-font {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--btn-font-color);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background: var(--btn-accent-bg-color);
+    color: var(--btn-accent-font-color);
+}
+
+
+/* ============= /Filter section ============= */
+
+/* ============= Portfolio section ============= */
+.secondary-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--team-advan-title-color);
+}
+
+.explanation {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--team-advan-descr-color);
+}
