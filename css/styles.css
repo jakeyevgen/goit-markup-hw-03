@@ -368,9 +368,7 @@ button {
 }
 
 .filter-btn {
-
     margin-bottom: 72px;
-
 }
 
 .filter-flex {
@@ -452,10 +450,6 @@ button {
     margin-left: var(--portfolio-card-left-gap);
     margin-top: var(--portfolio-card-top-gap);
 }
-
-/* .card-content {
-    padding: 32px;
-} */
 
 .portfolio-padding {
     padding: 96px 0 120px;
