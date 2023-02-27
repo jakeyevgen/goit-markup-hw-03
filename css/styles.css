@@ -21,6 +21,8 @@
     --team-carg-bg-color: #FFFFFF;
     --portfolio-card-left-gap: 24px;
     --portfolio-card-top-gap: 48px;
+    --team-card-left-gap: 24px;
+    --team-card-top-gap: 24px;
 }
 
 h1,
@@ -48,6 +50,12 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     /* outline: 1px solid red; */
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .list {
@@ -289,13 +297,10 @@ button {
 .team-flex {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-
+    margin-left: calc(-1 * var(--team-card-left-gap));
+    margin-top: calc(-1 * var(--team-card-top-gap));
 }
 
-.team-list {
-    flex-basis: calc((100% - 72px) / 4);
-}
 
 .team-main-title {
     font-weight: 700;
@@ -318,6 +323,12 @@ button {
     text-align: center;
 }
 
+.team-list>.item-team {
+    flex-basis: calc(100% / 4 - var(--team-card-left-gap));
+    margin-left: var(--team-card-left-gap);
+    margin-top: var(--team-card-top-gap);
+}
+
 .team-title-descr {
     font-weight: 400;
     font-size: 16px;
@@ -328,7 +339,7 @@ button {
 }
 
 .team-content {
-    padding: 32px;
+    padding: 32px 16px;
     background-color: var(--team-carg-bg-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -453,12 +464,6 @@ button {
 
 .portfolio-padding {
     padding: 96px 0 120px;
-}
-
-.portfolio-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 .portfolio-card {}
